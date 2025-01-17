@@ -1,0 +1,1 @@
+extern int wcscasecmp (const wchar_t *__s1, const wchar_t *__s2) __THROW;
