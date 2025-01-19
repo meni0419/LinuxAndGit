@@ -1,0 +1,13 @@
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        468M     0  468M   0% /dev
+tmpfs           477M     0  477M   0% /dev/shm
+#!/bin/bash
+# ANSI escape codes for text colors
+RED="\033[31m"
+GREEN="\033[32m"
+BLUE="\033[34m"
+RESET="\033[0m"  # Resets the text color to default
+
+# Use tee to display colorized output and log plain text simultaneously
+printf "${GREEN}%s${RESET} script work from ${BLUE}%s${RESET} and ${RED}%s${RESET} run it!\n" "$USER" "$(pwd)" "$(whoami)" \
+| tee -a /opt/091224-ptm/MaksymM/tmp/myfirstbashscript.log
