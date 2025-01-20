@@ -1,6 +1,5 @@
 #!/bin/bash
 # ANSI escape codes for text colors
-RED="\033[31m"
 GREEN="\033[32m"
 BLUE="\033[34m"
 RESET="\033[0m"  # Resets the text color to default
@@ -10,4 +9,4 @@ date
 printf "Hello ${GREEN}%s${RESET}!\n" "$USER"
 printf "Script run from ${BLUE}%s${RESET}!\n" "$(pwd)"
 ps aux | grep bioset | grep -v grep | wc -l
-ls -lah /etc/ | awk ' $9 == "passwd" {print $1}'
+ls -lah /etc/ | awk '$9 == "passwd" {print $1}'
