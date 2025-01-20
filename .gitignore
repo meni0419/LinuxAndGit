@@ -8,9 +8,11 @@
 
 *.iml
 *.json
-
+# mpeltonen/sbt-idea plugin
+.idea_modules/
 .idea/*
 .idea/
+
 out/
 debug/
 
@@ -19,8 +21,7 @@ debug/
 # IntelliJ
 /out/
 
-# mpeltonen/sbt-idea plugin
-.idea_modules/
+
 
 *.class
 *.jar
