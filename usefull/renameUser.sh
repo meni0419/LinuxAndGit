@@ -46,7 +46,7 @@ usermod -d "$NEW_HOME" -m "$NEW_USERNAME"
 
 # Update ownership of all files on the filesystem
 echo "Updating file ownership from $OLD_USERNAME to $NEW_USERNAME..."
-find / -user "$OLD_USERNAME" -exec chown -h "$NEW_USERNAME" {} \; 2>/dev/null
+find / -user "$OLD_USERNAME" -exec chown -h "$NEW_USERNAME":"$NEW_USERNAME" {} \; 2>/dev/null
 
 # Update sudoers file if needed
 if grep -q "$OLD_USERNAME" /etc/sudoers; then
