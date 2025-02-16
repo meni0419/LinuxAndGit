@@ -6,7 +6,7 @@
 CURRENT_DATE=$(date +"%d.%m.%y")
 
 # Каталог для создания файлов (можно заменить, если необходимо)
-TARGET_DIR="/opt/091224-ptm/MaksymM/all_homeworks/homework_13/files"
+TARGET_DIR="/opt/091224-ptm/MaksymM/all_homeworks/homework_12/files"
 
 # Проверяем, существует ли каталoг, если нет — создаём
 if [ ! -d "$TARGET_DIR" ]; then

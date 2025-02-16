@@ -1,0 +1,12 @@
+  400  crontab -e
+  401  sudo apt update && sudo apt install nano
+  402  sudo apt-get update && sudo apt-get install nano
+  403  sudo yum install nano
+  404  export EDITOR=nano
+  405  crontab -e
+  406  crontab -l
+  407  crontab -e
+  408  chmod +x /opt/091224-ptm/MaksymM/all_homeworks/homework_12/task_MaksymM.sh
+  409  /opt/091224-ptm/MaksymM/all_homeworks/homework_12/task_MaksymM.sh
+  410  crontab -e
+  411  history 12 > opt-workdir/all_homeworks/homework_13/hst_cmd.txt
