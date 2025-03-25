@@ -1,0 +1,42 @@
+from abc import ABC, abstractmethod
+
+from my_folder.utils import Seasons
+
+
+class Plant(ABC):
+    height: int | float = 0
+    age: float = 0
+    growth_speed: int
+
+    @abstractmethod
+    def grow(self, season):
+        raise NotImplemented('grow method is not implemented')
+
+    def __str__(self):
+        return (f'{self.__class__.__name__} '
+                f'age: {self.age} '
+                f'height: {self.height}')
+
+
+class Tree(Plant):
+    growth_speed = 2
+
+    def grow(self, season: Seasons):
+        if season == Seasons.SPRING:
+            self.height += self.growth_speed * 0.8
+        if season == Seasons.SUMMER:
+            self.height += self.growth_speed
+        self.age += 0.25
+
+
+class Flower(Plant):
+    growth_speed = 1
+
+    def grow(self, season: Seasons):
+        if season == Seasons.SPRING:
+            self.height += self.growth_speed
+        if season == Seasons.SUMMER:
+            self.height += self.growth_speed
+        if season == Seasons.AUTUMN:
+            self.height = 0
+        self.age += 0.25

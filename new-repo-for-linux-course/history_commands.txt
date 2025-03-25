@@ -1,0 +1,21 @@
+ 1411  git clone git@github.com:meni0419/new-repo-for-linux-course.git
+ 1412  cd new-repo-for-linux-course/
+ 1413  git checkout -b feature
+ 1414     chmod +w README.md
+ 1415     git check-ignore -v README.md
+ 1416  ls -lah README.md
+ 1417  git commit -am "some changes .gitignore and readme.md"
+ 1418  git status
+ 1419  git commit -am "some changes .gitignore and readme.md"
+ 1420  git status
+ 1421  git push
+ 1422  git push origin feature
+ 1423  git branch -a
+ 1424  git commit --amend "some changes in 2 files --amend"
+ 1425  git commit --amend -m "some changes in 2 files --amend"
+ 1426  git checkout main
+ 1427  git merge feature
+ 1428  history 16
+ 1429  history 18
+ 1430  history 20
+ 1431  history 21 > history_commands.txt

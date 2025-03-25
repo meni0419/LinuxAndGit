@@ -1,0 +1,18 @@
+  308  cd 091224-ptm/
+  309  ls -la
+  310  git clone git@github.com:AlexeyShchukin/merge_repo.git
+  312  cd merge_repo/
+  313  git checkout -b feature
+  314  touch README.md
+  315  nano README.md 
+  316  nano .gitignore 
+  318  git add .
+  320  git status
+  321  git commit -m "created readme"
+  322  git push --help
+  323  git push -u origin feature
+  324  git commit --amend 
+  325  git checkout main
+  326  git merge feature
+  328  git log --oneline --graph --decorate
+  329  history > history.txt
